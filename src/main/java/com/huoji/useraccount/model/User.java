@@ -32,4 +32,12 @@ public class User implements Serializable {
 		this.lastName = lastName;
 	}
 
+	public User(User user) {
+		this.id = user.getId();
+		this.password = user.getPassword();
+		this.email = user.getEmail();
+		this.firstName = user.getFirstName();
+		this.lastName = user.getLastName();
+	}
+
 }
